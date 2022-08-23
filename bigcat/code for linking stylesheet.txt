@@ -1,0 +1,55 @@
+<link rel="stylesheet" type="text/css" href="styles.css"
+for linking css to html do
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+for making page look same on phone 
+:visited when something needs to happen after visited 
+:hover when something neeeds to happen after mouse is hovered on
+:active when something needs to happen after site is being opened 
+<img to import image and src  for img source
+<a to make a hyperlink href is the link 
+display=inline-block to make menu inline
+webpage should always start with <!DOCTYPE html> before the html element
+meta charset="utf-8" for universal coding. always in the head element
+box-shadow adds shadow around element
+also has blurradius and speedradius
+rbg-uses quantities from 0-255 for each color
+hsl - has saturation and other factos
+hex- starts with a hash
+add a to any of the above abv for opacitty factor 
+linear-gradient function has 90/180 deg orientation
+may have a stop for colors as well 
+box-shadow
+
+
+Adding a dropdown to the form is easy with the select element. 
+The select element is a container for a group of option elements, 
+and the option element acts as a label for each dropdown option. 
+Both elements require closing tags.
+
+textarea element adds a field that allows customizable rows and columns unline input element
+use rows and cols attributes to specify rows and columns
+
+placeholder attribute tells a hint of what the user is to type
+The placeholder accepts a text value, which is displayed until the user starts typing.
+
+
+With form submissions, it is useful, and good practice, 
+to provide each submittable element with a name attribute. 
+This attribute is used to identify the element in the form submission.
+
+You can use the :not(:last-of-type) pseudo-class to select all but the last element.
+
+learn about borders in css
+
+
+It would be nicer to have the label text appear above the form elements.
+
+Select all input, textarea, and select elements, and make them take up the full width of their parent elements.
+
+Also, add 10px of margin to the top of the selected elements. Set the other margins to 0.
+
+with border color and size are all in the function eg. 1px olid color 
+
+
+a form is started is with the form element, and label elenment is nested within
+an input elemnt is nested within the label

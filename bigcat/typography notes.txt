@@ -1,0 +1,27 @@
+Create a body selector and give it a font-family set to Open Sans with a fallback of sans-serif.
+
+Remember that fonts with spaces in the name must be wrapped in quotes for CSS.
+fallback selects that font from the family
+eg. body{font-family: "Open Sans", sans-serif;}
+borders can be used to prioritze content
+
+If you inspect your .label element with your browser's developer tools, you may notice that it's actually 288 pixels wide instead of 270. 
+This is because, by default, the browser includes the border and padding when determining an element's size.
+
+To solve this, reset the box model by creating a * selector and giving it a box-sizing property of border-box.
+
+The letter-spacing property can be used to adjust the space between each character of text in an element.
+Horizontal spacing between equally important elements can increase the readability of your text.
+
+The float property is used to place an element on the left or right of its container, allowing other content (such as text) to wrap around it.
+
+The rem unit stands for root em, and is relative to the font size of the html element.
+
+to select an element in another element; you can use the father elements selector and the element name of the baby element 
+to hide overflow of an element or text, set overflow property to hidden 
+
+Give the .divider selector a clear property set to right. This will clear the float property, pushing the divider and any following content down below the float text.
+
+The :not pseudo-selector can be used to select all elements that do not match the given CSS rule.
+
+you can italize content in an element by wrapping it in an i element

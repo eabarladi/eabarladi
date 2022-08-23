@@ -1,0 +1,60 @@
+txt
+In the CSS box model, every HTML element is treated as a box with four areas.
+
+Imagine you receive a box from your favorite online retailer -- the content is the item in the box, or in our case, a header, paragraph, or image element.
+The content is surrounded by a space called padding, similar to how bubble wrap separates an item from the box around it.
+
+Think of the border like the cardboard box your item was shipped in.
+Replace the padding property with overflow set to hidden - changing the canvas back to its original dimensions. gives element padding without changing dimensions
+Use the filter property to blur the painting by 2px in the .canvas element. eg filter:blur(2px)
+The rectangles are too small and their edges don't have the soft quality of a painting.
+
+Increase the area and soften the edges of .one by setting its box-shadow to 0 0 3px 3px #efb762.
+Rotate each rectangle to give them more of an imperfect, hand-painted look.
+
+Use the transform property on the .one selector to rotate it counter clockwise by 0.6 degrees.eg transform:rotate(-0.6deg);
+
+FLEX BOX CLASS
+after importingimages 
+Normalize your box model by creating a * selector and setting the box-sizing property to border-box.
+Your images are currently too large, and you will not be able to see your CSS changes.
+
+Create a #gallery img selector to target your images. Give it a width property set to 25%.
+
+Also set the height property to 300px to keep your images a uniform size. 
+for an id attribute selector you can use #slector-name or element[(id=id-name)]
+Flexbox is a one-dimensional CSS layout approach that focuses on the flow of content. It offers the ability to control the way items are spaced and aligned within a container.
+
+To set an element to use Flexbox, you give it a display property set to flex. Create a #gallery selector and give it that property.
+
+Flexbox can be thought of as having two axes, the main axis and the cross axis. The main axis is determined by the flex-direction property. If flex-direction is set to row or row-reverse, the main axis is horizontal. If flex-direction is set to column or column-reverse, the main axis is vertical.
+
+Give your #gallery selector a flex-direction property set to row.
+
+You may have noticed that your images have all moved onto the same row.
+
+The flex-wrap property determines how your items should behave when the flex container is too small. Setting this property to wrap will allow your items to wrap to the next row/column (depending on your main axis), where nowrap will prevent your items from wrapping. When this is set to nowrap, items may either shrink to fit or overflow.
+
+Give the #gallery selector a flex-wrap property set to wrap. You should see your images take a four-column layout. This is because you set their width to 25% in an earlier step.
+
+The justify-content property determines how the items inside a flex container are positioned along the main axis, affecting their position and the space around them.
+
+Give your #gallery selector a justify-content property set to center.
+The align-items property positions the flex content along the cross axis. In this case, with your flex-direction set to row, your cross axis would be vertical.
+
+To vertically center your images, give your #gallery selector an align-items property set to center.
+Notice how some of your images have become distorted. This is because the images have different aspect ratios. Rather than setting each aspect ratio individually, you can use the object-fit property to determine how images should behave.
+
+Give your #gallery img selector the object-fit property and set it to cover. This will tell the image to fill the img container while maintaining aspect ratio, resulting in cropping to fit.
+
+Create a media query for screens smaller than 800px in width. In that media query, create a #gallery img rule and set the width property to 50%. This will convert your gallery to a two-column layout.
+
+Your new @media query should have a max-width of 800px like this: @media (max-width: 800px).
+eg.@media (max-width:800px){ 
+#gallery img{width:50%;}}
+
+Resize the preview to see the layout change from your media query.
+
+Finally, create another media query for screens smaller than 600px wide. In that media query, create a #gallery img rule and set the width property to 100%. This will give your gallery a single-column layout.
+
+Your CSS Flexbox Photo Gallery is now complete.

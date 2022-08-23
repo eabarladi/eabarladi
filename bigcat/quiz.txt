@@ -1,0 +1,124 @@
+to set the language for the html use lang attribute
+
+You may be familiar with the meta element already; it is used to specify information about the page, such as the title, description, keywords, and author.
+
+Give your page a meta element with an appropriate charset value.
+
+The charset attribute specifies the character encoding of the page, and, nowadays, UTF-8 is the only encoding supported by most browsers.
+
+Continuing with the meta elements, a viewport definition tells the browser how to render the page.
+ Including one betters visual accessibility on mobile, and improves SEO (search engine optimization).
+
+Add a viewport definition with a content attribute detailing the width and initial-scale of the page.
+
+Another important meta element for accessibility and SEO is the description definition. 
+The value of the content attribute is used by search engines to provide a description of your page.
+
+Add a meta element with the name attribute set to description, and give it a useful content attribute.
+
+Lastly in the head, the title element is useful for screen readers to understand the content of a page. Furthermore, it is an important part of SEO.
+
+Give your page a title that is descriptive and concise.
+
+Navigation is a core part of accessibility, and screen readers rely on you to provide the structure of your page. This is accomplished with semantic HTML elements.
+
+Add a header and a main element to your page.
+
+The header element will be used to introduce the page, as well as provide a navigation menu.
+
+The main element will contain the core content of your page.
+
+A useful property of an SVG (scalable vector graphics) is that it contains a path attribute which allows the image to be scaled without affecting the resolution of the resultant image.
+
+Currently, the img is assuming it's default size, which is too large. Correctly, scale the image using it's id as a selector, and setting the width to max(100px, 18vw).
+
+eg.
+#logo {width:max(100px, 18vw)}
+
+As described in the freeCodeCamp Style Guide, the logo should retain an aspect ratio of 35 / 4, and have padding around the text.
+
+to let an element use the flexbox display set the display property to flex eg. display:flex;
+
+Target unordered list elements within nav elements, and use Flexbox to evenly space the children.
+eg. nav > ul{justify-content:space-evenly;display:flex;}
+
+the correct method attribute for a form element is post(method="post")
+to maka a form element to submit to a site use the action property and set its attribute to the site
+eg. <form action="site link"></form>
+
+To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies. 
+The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts preset values.
+
+Give each of the section elements the region role.
+
+Every region role requires a visible label, which should be referenced by the aria-labelledby attribute.
+
+To the section elements, give the following aria-labelledby attributes:
+
+student-info
+html-questions
+css-questions
+Then, within each section element, nest one h2 element with an id matching the corresponding aria-labelledby attribute. Give each h2 suitable text content.
+eg.<section role="region" aria-labelledby="student-info">
+          <h2 id="student-info"></h2>
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions"></h2>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions"></h2>
+        </section>
+
+Typeface plays an important role in the accessibility of a page. Some fonts are easier to read than others, and this is especially true on low-resolution screens.
+
+Change the font for both the h1 and h2 elements to Verdana, and use another web-safe font in the sans-serif family as a fallback.
+eg.{font-family:Verdana,"Tahoma", sans-serif;}
+
+Also, add a border-bottom of 4px solid #dfdfe2 to h2 elements to make the sections distinct.
+
+It is important to link each input to the corresponding label element. This provides assistive technology users with a visual reference to the input.
+
+This is done by giving the label a for attribute, which contains the id of the input.
+
+This section will take a student's name, email address, and date of birth. Give the label elements appropriate for attributes, as well as text content. Then, link the input elements to the corresponding label elements.
+
+
+Keeping in mind best-practices for form inputs, give each input an appropriate type and name attribute. Then, give the first input a placeholder attribute
+
+
+Arguably, D.O.B. is not descriptive enough. This is especially true for visually impaired users. One way to get around such an issue, without having to add visible text to the label, is to add text only a screen reader can read.
+
+Append a span element with a class of sr-only to the current text content of the third label element.
+
+
+The .sr-only text is still visible. There is a common pattern to visually hide text for only screen readers to read.
+
+This pattern is to set the following CSS properties:
+
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+white-space: nowrap;
+border: 0;
+
+To provide the functionality of the true/false questions, we need a set of inputs which do not allow both to be selected at the same time.
+
+Within each list element, nest one label element, and within each label element, nest one input element with the appropriate type.
+
+
+it's good to link a label to it's corresponding input, it's ddone by giving the label a for attribute that matches the id of the input 
+
+
+
+
+To prevent unnecessary repetition, target the before pseudo-element of the p element, and give it a content property of "Question #".
+eg.p:before{content:"Question #"}
+
+On the topic of visual accessibility, contrast between elements is a key factor. 
+For example, the contrast between the text and the background of a heading should be at least 4.5:1.
+for example li>a {color:#dfdfe2;}/li>a {color:inherit;}
+
